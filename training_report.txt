@@ -1,0 +1,57 @@
+﻿Tickets used: 20000
+============================================================
+Training category model (predicting 'type')
+Test accuracy:      0.808
+Always-guess-most-common baseline: 0.399
+
+              precision    recall  f1-score   support
+
+      Change       0.98      0.86      0.91       415
+    Incident       0.72      0.90      0.80      1596
+     Problem       0.66      0.35      0.45       837
+     Request       0.95      0.99      0.97      1152
+
+    accuracy                           0.81      4000
+   macro avg       0.83      0.78      0.79      4000
+weighted avg       0.80      0.81      0.79      4000
+
+Saved: models/category_model.pkl
+============================================================
+Training department model (predicting 'queue')
+Test accuracy:      0.451
+Always-guess-most-common baseline: 0.291
+
+                                 precision    recall  f1-score   support
+
+           Billing and Payments       0.83      0.65      0.73       417
+               Customer Service       0.38      0.38      0.38       630
+                General Inquiry       0.00      0.00      0.00        53
+                Human Resources       1.00      0.03      0.06        68
+                     IT Support       0.45      0.12      0.19       458
+                Product Support       0.40      0.35      0.37       742
+          Returns and Exchanges       0.90      0.04      0.09       200
+            Sales and Pre-Sales       0.75      0.03      0.05       114
+Service Outages and Maintenance       0.86      0.21      0.34       153
+              Technical Support       0.42      0.80      0.55      1165
+
+                       accuracy                           0.45      4000
+                      macro avg       0.60      0.26      0.28      4000
+                   weighted avg       0.51      0.45      0.41      4000
+
+Saved: models/department_model.pkl
+============================================================
+Training priority model (predicting 'priority')
+Test accuracy:      0.538
+Always-guess-most-common baseline: 0.407
+
+              precision    recall  f1-score   support
+
+        high       0.56      0.62      0.59      1560
+         low       0.57      0.14      0.22       811
+      medium       0.52      0.66      0.58      1629
+
+    accuracy                           0.54      4000
+   macro avg       0.55      0.47      0.46      4000
+weighted avg       0.54      0.54      0.51      4000
+
+Saved: models/priority_model.pkl
