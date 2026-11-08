@@ -1,3 +1,5 @@
+**Live demo:** https://ai-ticket-triage-efyiarnh5nqjgzatkf2kua.streamlit.app
+
 # AI Customer Support Ticket Triage System
 
 A machine-learning app that reads a customer support message and predicts its **category**, **priority** and **support department**, shows a **confidence score** for each prediction, and flags uncertain tickets for **human review**.
